@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cards</title>
+
+    <style>
+        #container{
+            position: relative;
+            width: 350px;
+            height: 500px;
+        }
+        #card{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            transform-style: preserve-3d;
+            transition: all .9s;
+        }
+        .face {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffff;
+            position: absolute;
+            border-radius: 10px;
+            backface-visibility: hidden;
+        }
+        #front {
+            background: chartreuse;
+        }
+        #back {
+            background: black;
+            transform: rotateY(180deg);
+        }
+        .flip {
+            transform: rotateY(180deg);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div id="container">
+        <div class="flip" id="card">
+            <div id="back" class="face">
+                Back
+            </div>
+            <div id="front" class="face">
+                Front
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const card = document.querySelector("#card")
+        card.addEventListener("click", (e)=>{card.classList.toggle("flip")});
+    </script>
+
+</body>
+</html>

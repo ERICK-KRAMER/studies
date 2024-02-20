@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+header {
+    background-image:linear-gradient(-45deg, #27394D,#49364C,#6D314B,#902D4A,#AF294A,#902D4A,#6D314B,#27394D);
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100vh;
+    border-radius: 0px 15px 0px 0px;
+}
+img {
+    margin: auto;
+    padding: 40px;
+    display: flex;
+}
+header > nav{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+header > nav > a{
+    text-decoration: none;
+    color: white;
+}
+main {
+    display: flex;
+    align-items: center;
+}
+section > nav > button {
+    border: none;
+    width: 70px;
+    height: 30px;
+    border-radius: 8px;
+}
+section > nav {
+    display:flex ;
+    justify-content: end;
+    gap: 30px;
+    padding: 10px;
+}
+footer {
+    display: flex; 
+}
+footer > faq {
+    background-color: #6D314B;
+    width: 50px;
+    height: 50px;
+}
+

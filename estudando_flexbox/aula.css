@@ -1,0 +1,54 @@
+body {
+    padding-bottom: 500px;
+}
+.conteniner {
+    background-color: #eef;
+    max-width: 300px;
+    height: 300px;
+    padding: 15px;
+    border: 2px solid red;
+    display: flex;
+    /* alinhamento horizontal */
+    justify-content: space-between;
+    /*justify-content: space-around;
+    justify-content: center;
+    /* alinhamento vertical */
+    align-items: center;
+    flex-wrap: wrap;
+}
+.item{
+    background-color: rgb(222, 222, 230);
+    width: 50px;
+    height: 50px;
+    border: 2px solid blue;
+    
+}
+.box{
+    background-color: rgb(222, 222, 230);
+    height: 50px;
+    border: 2px solid blue;
+    /* flex-basis: 30px; */
+    /* shorthand */
+    flex: 1 1 50px;   
+    /* primeiro parametro é o grow
+       Segundo parametro é o shrink 
+       treneiro parametro é o basis*/
+
+}
+/* #item-1,
+#item-2 {
+    flex-grow: 1;
+}
+#item-3 {
+    flex-grow: 2;
+} */
+
+.item-1 {
+    order: 3;
+}
+.item-2 {
+    order: 1;
+}
+.item-3 {
+    order: 2;
+}

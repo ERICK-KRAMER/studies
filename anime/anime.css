@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+body {
+    min-height: 100vh;
+    background-image: url(iamgem/anime2.jpeg);
+}
+section {
+    margin-top: 25px;
+}
+img {
+    height: 300px;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+    transition: all .8s ease;
+}
+img:hover {
+    transform: scale(1.2);
+}
+h3 {
+    color: white;
+    padding: 10px;
+}
+header{
+    background-color:  #17AEA0;
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.content-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.anime-item{
+    text-align: center;
+    margin: 15px;
+    display: block;
+}
+.main-footer{
+    display: flex;
+    text-align: center;
+    background-color: #17AEA0;
+    height: 100px;
+    font-style: italic;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.anime-list{
+    display: flex;
+}
+/* a {
+    display: flex;
+    text-decoration: none;
+    background-color: white;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    color: black;
+}
+a:hover {
+    background-color: #17AEA0;
+} */
+input {
+    text-decoration: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+}

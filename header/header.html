@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="shortcut icon" href="midias/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="heade.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Header</title>
+
+</head>
+<body>
+    <audio autoplay>
+        <source src="midias/Body of Water - TrackTribe.mp3" type="">
+    </audio>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="header.html" style="display: flex; color: black; text-decoration: none; align-items: center;">
+                    <h1>Logo</h1>
+                    <img src="midias/apple-touch-icon.png" alt="Logo_anime" height="50px" style="margin: 0px 10px;">
+                </a>
+            </div>
+            <menu class="nav-list">
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="#" style="text-decoration: none;">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="text-decoration: none;">Cadastro</a></li>
+                </ul>
+                <span class="material-symbols-sharp" id="menu" onclick="menuShow()">menu</span>
+            </menu>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="#" style="text-decoration: none;">Login</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" style="text-decoration: none;">Cadastro</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <nav-2>
+            <div class="box-login">
+                <input type="text" id="e-mail" placeholder=" E-mail">
+                <input type="password" id="password" placeholder=" Senha">
+                <button style="margin: 1rem; width: 110px; height: 30px">Conectar</button>
+                <a href="#" style="color: white; text-decoration: none;">Esqueceu a senha ?</a>
+            </div>
+        </nav-2>
+    </section>
+    <footer>
+        <nav-3>
+            <a href="header.html" style="text-decoration: none;">
+                <div class="logo-footer" style="display: flex; align-items: center;
+                justify-content: center; color: black;">
+                    <h1>Logo</h1>
+                    <img src="midias/apple-touch-icon.png" height="100">
+                </div>
+            </a>
+            &copy; kramer Desenvolvimet &trade;
+        </nav-3>
+    </footer>
+    <script>
+        function menuShow(){
+            let menuMobile = document.querySelector(".mobile-menu")
+            if(menuMobile.classList.contains("open")) {
+                menuMobile.classList.remove("open")
+            } else {
+                menuMobile.classList.add("open")
+            }
+        }
+    </script>
+</body>
+</html>

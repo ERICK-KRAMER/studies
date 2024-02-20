@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bemmo</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background:url(img/Arvore-Adventure-Time-GEEKNESS-01.jpg)center;
+            background-size: cover;
+            color: white;
+        }
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+        .corpo{
+            width: 700px;
+            height: 900px;
+            background:#24AE9F;
+            margin: auto;
+            border: 10px solid white;
+            border-radius: 10px;
+        }
+        .tela{
+            margin: 47px;
+            width: 585px;
+            height: 500px;
+            background:#B9DFCA;
+            border: 5px solid black;
+            border-radius: 10px;
+        }
+        .display{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #botao1{
+            width: 300px;
+            height: 30px;
+            background:#03523A;
+            border-radius: 5px;
+            border: 4px solid black;
+        }
+        #botao2{
+            width: 60px;
+            height: 60px;
+            background:#0D477E;
+            border-radius: 50%;
+            border: 5px solid black;
+        }
+        .gamepad{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .seta{
+            justify-content: center;
+            padding-top: 20px;
+            margin-left: 50px;
+        }
+        .setas{ 
+            position: absolute;
+            width: 38px;
+            height: 120px;
+            border-radius: 5px;
+            background: #FED150;
+            
+        }
+        .top{
+            margin-top: 1px;
+            width: 50%;
+            border-radius: 2px;
+            border-top: 2px solid white;
+            height: 10px;
+        }
+        .bottom {
+            width: 50%;
+            height: 10px;
+            margin-top: 108px;
+            border-radius: 2px;
+            border-bottom: 2px solid white;
+        }
+        #vertical{
+            display: flex;
+            padding: 0px 2px 0px 2px;
+        }
+        #horizontal {
+            rotate: calc(90deg);
+        }
+        #start{
+            display: flex;
+            margin-top: 130px;
+            margin-right: 260px;
+        }
+        .start{
+            display: flex;
+            margin: 10px;
+            width: 50px;
+            height: 10px;
+            background:#0D477E; 
+            border-radius: 10px;
+        }
+        .jostyck{
+
+        }
+        iframe{
+            width: 575px;
+            height: 490px;
+            border-radius: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="corpo" id="corpo">
+            <div class="tela">
+                <iframe src="iframe.html" frameborder="0"></iframe>
+            </div>
+            <div class="display">
+                <div class="botao" id="botao1"></div>
+                <div class="botao" id="botao2"></div>
+            </div>
+            <div class="gamepad">
+                <div class="jostyck">
+                    <div class="seta">
+                        <div id="vertical" class="setas">
+                            <div class="top"></div>
+                            <div class="bottom"></div>
+                        </div>
+                        <div id="horizontal" class="setas"></div>
+                    </div>
+                    <div id="start">
+                        <span class="start"></span>
+                        <span class="start"></span>
+                    </div>
+                </div>            
+                <div class="botoes"></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
